@@ -182,7 +182,7 @@ func resourceAwsEcsService() *schema.Resource {
 			},
 
 			"load_balancer": {
-				Type:     schema.TypeSet,
+				Type:     schema.TypeList,
 				Optional: true,
 				ForceNew: true,
 				Elem: &schema.Resource{
